@@ -343,7 +343,16 @@ nav a .button {
   background-color: #f8f3e9;
 }
 
+@media only screen and (min-width: 390px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
   .page {
     padding: 10rem 1.2rem 15rem 1.2rem;
   }
@@ -355,5 +364,25 @@ nav a .button {
   }
   .work .works .work img {
     height: 18rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 13px;
+  }
+  nav a .default {
+    display: none;
+  }
+  nav a .full {
+    display: block;
+    font-size: 1.5rem;
+    color: #231f20;
+    border-bottom: 2px solid #231f20;
+  }
+  nav a .full:hover {
+    display: block;
+    color: #ed1666 !important;
+    border-bottom: 2px solid #ed1666 !important;
   }
 }
